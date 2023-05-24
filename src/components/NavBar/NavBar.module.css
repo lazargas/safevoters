@@ -1,0 +1,34 @@
+@font-face {
+    font-family: rajdhani;
+    src: url("/static/fonts/Rajdhani-bold.ttf");
+  }
+
+
+.navbar{
+    position: fixed;
+    height: 10vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 90vw 1fr;
+    align-items: center;
+    padding: 14px ;
+    font-family: rajdhani;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-shadow: red -1.5px 0, cyan 1.5px 0;
+}
+
+@media (max-width: 1008px) {
+  .navbar{
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px ;
+    font-family: rajdhani;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+}

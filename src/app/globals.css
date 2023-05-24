@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rajdhani:wght@700&display=swap');
+
+@font-face {
+  font-family: rajdhani;
+  src: url("/static/fonts/just-dance-bold.ttf");
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.bckground{
+  background-image: url("/Images/background4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.heading{
+  color: white;
+  font-family: rajdhani;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  
+  transition: color 0.2s ease-in-out;
+
+}
+
+.heading:nth-child(1){
+  font-size: 80px;
+  text-shadow: red -6px 0, cyan 6px 0;
+}
+.heading:nth-child(2){
+  font-size: 40px;
+  text-shadow: red -3px 0, cyan 3px 0;
+}
+
+.heading:hover{
+  
+  color:cyan;
+}
+
+@media (max-width:1008px) {
+  .heading:nth-child(1){
+    font-size: 40px;
+    text-shadow: red -3px 0, cyan 3px 0 ;
+  }
+  .heading:nth-child(2){
+    font-size: 20px;
+    text-shadow: red -3px 0, cyan 3px 0 ;
+  }
+  .heading:hover{
+    
+    color: cyan;
+  }
+}
